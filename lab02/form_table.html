@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+          border: 1px solid rgb(0, 0, 0);
+        }
+        </style>
+        <style> 
+            input[type=text] {
+              width: 100%;
+              padding: 5px 10px;
+              margin: 8px 0;
+              box-sizing: border-box;
+            }
+            body {
+      background-color: #E8DAEF;
+    }
+            </style>
+</head>
+<body>
+    <h1>Form Demo</h1>
+    <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
+    <table>
+        <tr>
+          <th bgcolor="#D4E6F1"><label for="name">ชื่อ-นามสกุล : </label></th>
+          <th bgcolor="#D1F2EB"><input type="text" name="name" id="name" placeholder="ใส่ชื่อนามสกุล"></th>
+        </tr>
+        <tr>
+            <th bgcolor="#D4E6F1"><label for="passwd">รหัสผ่าน : </label></th>
+            <th bgcolor="#D1F2EB"><input type="text" name="passwd" id="passwd" placeholder="ป้อนรหัสผ่าน"></th>
+        </tr>
+        <tr>
+            <th bgcolor="#D4E6F1"><label for="sex">เพศ :</label></th>
+            <th bgcolor="#D1F2EB"><input type="radio" name="sex" id="sex" value="M">ชาย
+                <input type="radio" name="sex" id="sex" value="F">หญิง</th>
+        </tr>
+        <tr>
+            <th bgcolor="#D4E6F1"><label for="choice">งานอดิเรก :</label></th>
+            <th bgcolor="#D1F2EB"><input type="checkbox" name="choice1" id="choice1" value="1">ดูหนัง
+                <input type="checkbox" name="choice2" id="choice2" value="2">ฟังเพลง
+                <input type="checkbox" name="choice3" id="choice3" value="3">เล่นเกม</th>
+        </tr>
+        <tr>
+            <th bgcolor="#D4E6F1"><label for="emotion">ความรู้สึกตอนนี้ :</label><br></th>
+            <th bgcolor="#D1F2EB"><select name="emotion">
+                <option value="0">--Select one--</option>
+                <option value="1">Happy</option>
+                <option value="2">Sad</option>
+                <option value="3">Fun</option>
+            </select></th>
+        </tr>
+        <tr>
+            <th bgcolor="#D4E6F1">ข้อเสนอเเนะ :</th>
+            <th bgcolor="#D1F2EB"><Textarea name="commmet" id="comment" rows="5" cols="50"></Textarea></th>
+        </tr>
+      </table>
+      <br><br>
+        <input style="background-color: #3498DB;" type="submit" value="Send">
+        <input style="background-color: #E74C3C;" type="reset" value="Clear">
+    </form> 
+</body>
+</html>
